@@ -3,16 +3,17 @@
     <head>
         <title>HCI Alexa Demo</title>
 		<link rel="stylesheet" href="style.css">
+        <script src="dialogue.js"></script>
     </head>
     <body>
 		<h1>HCI Alexa Skill</h1>
 		<p>This is a prototype of our Alexa skill for human-computer interaction class. Typing something in the box simulates talking to Alexa, and the replies emulate what Alexa would say.</p>
 		<div id="chat-header"><span>Alexa</span>&nbsp<span id="chat-header-alexa">You</span id="chat-header-you"></div>
-		<div id="chat-box">Chat box</div>
+		<div id="chat-box"></div>
 		<div>
-		    Say something here:
-		    <input type="text" name="dialog">
-		    <button type="button">Submit</button>
+		    Talk to Alexa:
+		    <input type="text" name="dialog" id="dialog-box">
+		    <button type="button" onclick="userSpeak()">Submit</button>
 		</div>
 		<br>
 		<div>Echo show screen</div>
