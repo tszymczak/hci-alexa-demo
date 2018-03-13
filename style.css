@@ -1,0 +1,18 @@
+/* Styling for the chat screen */
+#chat-header {
+	width: 500px;
+}
+
+/* For the box containing the conversation w/Alexa */
+#chat-box {
+	width: 500px;
+	height: 300px;
+	border: 1px solid #000;
+}
+
+/* The box that displays the contents of the Show screen */
+#show-screen {
+	width: 768px;
+	height: 462px;
+	border: 1px solid #000;
+}
