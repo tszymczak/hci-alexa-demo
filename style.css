@@ -3,11 +3,22 @@
 	width: 500px;
 }
 
+#chat-header-alexa {
+	float: right
+}
+
+#chat-header-you {
+	float: left
+}
+
 /* For the box containing the conversation w/Alexa */
 #chat-box {
 	width: 500px;
 	height: 300px;
 	border: 1px solid #000;
+	/* Make it scroll instead of growing in size when it
+	gets full */
+	overflow: auto;
 }
 
 /* The box that displays the contents of the Show screen */
@@ -15,4 +26,8 @@
 	width: 768px;
 	height: 462px;
 	border: 1px solid #000;
+}
+
+.gray {
+	color: #AAA;
 }
