@@ -4,11 +4,11 @@
 }
 
 #chat-header-alexa {
-	float: right;
+	float: left;
 }
 
 #chat-header-you {
-	float: left;
+	float: right;
 }
 
 /* For the box containing the conversation w/Alexa */
@@ -29,9 +29,9 @@
 }
 
 .user-message-box {
-    text-align: left;
+    text-align: right;
 }
 
 .alexa-message-box {
-    text-align: right;
+    text-align: left;
 }
