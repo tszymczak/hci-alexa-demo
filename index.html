@@ -10,14 +10,17 @@
 		<h1>HCI Alexa Skill</h1>
 		<p>This is a prototype of our Alexa skill for human-computer interaction class. Typing something in the box simulates talking to Alexa, and the replies emulate what Alexa would say.</p>
 		<div id="chat-header"><span id="chat-header-alexa">Alexa</span>&nbsp<span id="chat-header-you">You</span></div>
-		<div id="chat-box"></div>
+		<div id="chat-box">
+            <!-- Chat goes here -->
+        </div>
 		<div>
 		    Talk to Alexa:
 		    <input type="text" name="dialog" id="dialog-box">
-		    <button type="button" onclick="userSpeak()">Submit</button>
+		    <button type="button" onclick="ask()">Submit</button>
+		    <button type="button" onclick="test()">Test!</button>
 		</div>
 		<br>
-		<div>Echo show screen</div>
-		<div id="show-screen">Echo Show output goes here</div>
+		<p>Echo show screen</p>
+		<p id="show-screen">Echo Show output goes here</p>
     </body>
 </html>

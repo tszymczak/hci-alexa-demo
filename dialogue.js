@@ -1,15 +1,31 @@
-async function userSpeak() {
+async function ask() {
     var message = document.getElementById("dialog-box").value;
     document.getElementById("dialog-box").value = "";
-    var messageBox = document.createElement("div");
-    messageBox.innerHTML = message;
-    messageBox.className = "user-message-box";
+    userSay(message)
 
-    document.getElementById("chat-box").appendChild(messageBox);
-
-    await sleep(1000);
     askQuestion(message);
 }
+
+function userSay(message) {
+    // Create the message box.
+    var messageBox = document.createElement("div");
+    messageBox.innerHTML = message;
+    messageBox.className = "message-box user-message-box";
+
+    // Put message box container in the page.
+    document.getElementById("chat-box").appendChild(messageBox);
+}
+
+function alexaSay(message) {
+    // Create the message box.
+    var messageBox = document.createElement("div");
+    messageBox.innerHTML = message;
+    messageBox.className = "message-box alexa-message-box";
+
+    // Put message box container in the page.
+    document.getElementById("chat-box").appendChild(messageBox);
+}
+
 
 function askQuestion(question) {
     var questions = [
@@ -44,16 +60,8 @@ function askQuestion(question) {
     }
 
     if (matched == 0) {
-        alexaSpeak("Sorry, I don't understand that.");
+        alexaSay("Sorry, I don't understand that.");
     }
-}
-
-function alexaSpeak(message) {
-    var messageBox = document.createElement("div");
-    messageBox.innerHTML = message;
-    messageBox.className = "alexa-message-box";
-
-    document.getElementById("chat-box").appendChild(messageBox);
 }
 
 /* Pause execution for time ms. See
@@ -61,4 +69,11 @@ https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sle
 for details. */ 
 function sleep(time) {
     return new Promise(resolve => setTimeout(resolve, time));
+}
+
+function test() {
+    userSay("Hello");
+    alexaSay("Hello");
+    userSay("What time is the cafeteria open?");
+    alexaSay("The cafeteria is open for breakfast from 7:30 to 9:00, lunch from 11:00 to 2:00, and dinner from 5:00 to 7:00.");
 }

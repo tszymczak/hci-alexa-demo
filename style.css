@@ -1,3 +1,16 @@
+/* Generic Styles */
+h1 {
+    font-family: "Arial", sans-serif;
+}
+
+p {
+    font-family: "Arial", sans-serif;
+}
+
+div {
+    font-family: "Arial", sans-serif;
+}
+
 /* Styling for the chat screen */
 #chat-header {
 	width: 500px;
@@ -28,10 +41,18 @@
 	border: 1px solid #000;
 }
 
+.message-box {
+    padding: 10px;
+    max-width: 400px;
+    clear: both;
+}
+
 .user-message-box {
-    text-align: right;
+    float: right;
+    background-color: #ff7a7b;
 }
 
 .alexa-message-box {
-    text-align: left;
+    float: left;
+    background-color: #7abdff;
 }
