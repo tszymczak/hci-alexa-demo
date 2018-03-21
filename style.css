@@ -1,19 +1,42 @@
 /* Generic Styles */
 h1 {
     font-family: "Arial", sans-serif;
+    margin-left: 10px;
 }
 
 p {
     font-family: "Arial", sans-serif;
+    margin-left: 10px;
 }
 
 div {
     font-family: "Arial", sans-serif;
+    margin-left: 10px;
+}
+
+button {
+    background-color: #83ccff;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+input {
+    background-color: white;
+}
+
+#wrapper {
+    margin: 0px 100px;
 }
 
 /* Styling for the chat screen */
 #chat-header {
 	width: 500px;
+    margin: 10px;
 }
 
 #chat-header-alexa {
@@ -28,7 +51,6 @@ div {
 #chat-box {
 	width: 500px;
 	height: 300px;
-	border: 1px solid #000;
 	/* Make it scroll instead of growing in size when it
 	gets full */
 	overflow: auto;
@@ -38,21 +60,32 @@ div {
 #show-screen {
 	width: 768px;
 	height: 462px;
-	border: 1px solid #000;
 }
 
+.card {
+    box-shadow: 1px 1px 8px grey;
+    margin: 10px;
+}
 .message-box {
-    padding: 10px;
-    max-width: 400px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    max-width: 80%;
     clear: both;
 }
 
 .user-message-box {
     float: right;
-    background-color: #ff7a7b;
+    background-color: #ffbd54;
 }
 
 .alexa-message-box {
     float: left;
-    background-color: #7abdff;
+    background-color: #a5daff;
+}
+
+#dialog-box {
+    border: none;
+    border-radius: none;
+    padding: 4px;
 }
