@@ -10,7 +10,46 @@
     <body onload="submitOnEnter()">
         <div id="wrapper">
 		    <h1>HCI Alexa Skill</h1>
-		    <p>This is a prototype of our Alexa skill for human-computer interaction class. Typing something in the box simulates talking to Alexa, and the replies emulate what Alexa would say.</p>
+		    <p>This is a prototype of our Alexa skill for human-computer interaction class. Type something in the box to simulate talking to Alexa. We also simulate the Show screen. Depending on which question you ask, relevant information appears on an interface mockup. Since the Show has a touch screen, a finished product would allow you to interact with the screen like a mobile app.</p>
+            <p>Here is a list of questions this Alexa skill mockup understands, along with a few alternate phrasings for each:<br>
+                <ul>
+                    <li>Is the cafeteria open?</li>
+                        <ul><li>Is the cafeteria open right now?</li>
+                            <li>Is the cafeteria currently open?</li></ul>
+                    <li>When does the cafeteria open?</li>
+                        <ul><li>When does the cafeteria start serving food?</li></ul>
+                    <li>When does the cafeteria close?</li>
+                        <ul><li>What does the cafeteria stop serving food?</li></ul>
+                    <li>What are the cafeteria's hours?</li>
+                        <ul><li>When is the cafeteria open?</li>
+                            <li>What time is the cafeteria open?</li></ul>
+                    <li>What types of food do you serve?</li>
+                        <ul><li>What kinds of food do you have?</li>
+                            <li>What are the varieties of food offered at the cafeteria?</li></ul>
+                    <li>What is on the menu today?</li>
+                        <ul><li>What is being served today?</li></ul>
+                    <li>What is the library's phone number?</li>
+                        <ul><li>What is the phone number for the library?</li>
+                            <li>How do I call the library?</li></ul>
+                    <li>What is the library's email?</li>
+                        <ul><li>What is the library's email address?</li>
+                            <li>What is the email address for the library?</li></ul>
+                    <li>When is the library open?</li>
+                        <ul><li>What are the hours for the library?</li>
+                            <li>What are the open and closing times of the library?</li></ul>
+                    <li>What services does the library offer?</li>
+                        <ul><li>What can I do at the library?</li>
+                            <li>Apart from borrowing materials, what other services are offered in the library?</li></ul>
+                    <li>What can I borrow from the library?</li>
+                        <ul><li>What can I borrow from the library other than books?</li>
+                            <li>part from books, what other items can I borrow from the library?</li></ul>
+                    <li>When are borrowed materials due?</li>
+                        <ul><li>When do you have to return books?</li>
+                            <li>How long can you borrow things for?</li></ul>
+                    <li>Can I check out a book?</li>
+                        <ul><li>I want to borrow a book.</li></ul>
+                </ul>
+            </p>
 		    <div id="chat-header"><span id="chat-header-alexa">Alexa</span>&nbsp;<span id="chat-header-you">You</span></div>
 		    <div id="chat-box" class="card">
                 <!-- Chat goes here -->

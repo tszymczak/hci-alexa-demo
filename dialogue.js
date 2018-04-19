@@ -226,7 +226,5 @@ function showImg(newimg) {
         image.src = "images/library-books.png";
     } else if (newimg == "library-login") {
         image.src = "images/library-login.png";
-    } else {
-        image.src = "images/white.png";
     }
 }
