@@ -44,78 +44,78 @@ function askQuestion(question) {
     var questions = [
         {
             phrasings: [
-                "hello",
-                "hello.",
+                "Hello",
+                "Hello.",
             ],
             answer: "Hello.",
         },
         {
             phrasings: [
-                "is the cafeteria open?",
-                "is the cafeteria open right now?",
+                "Is the cafeteria open?",
+                "Is the cafeteria open right now?",
             ],
             answer: "The cafeteria is currently open for lunch.",
         },
         {
             phrasings: [
-                "when does the cafeteria close?",
-                "what does the cafeteria stop serving food?",
-                "when does serving stop?",
+                "When does the cafeteria close?",
+                "What does the cafeteria stop serving food?",
+                "When does serving stop?",
             ],
             answer: "Breakfast ends at 9:00, lunch ends at 2:00 and dinner ends at 7:00.",
         },
         {
             phrasings: [
-                "when is the cafeteria open?",
-                "what time is the cafeteria open?",
-                "what are the cafeteria's hours?",
+                "When is the cafeteria open?",
+                "What time is the cafeteria open?",
+                "What are the cafeteria's hours?",
             ],
             answer: "The cafeteria is open for breakfast from 7:30 to 9:00, lunch from 11:00 to 2:00, and dinner from 5:00 to 7:00.",
         },
         {
             phrasings: [
-                "what are the varieties of food offered at the cafeteria?",
-                "what kinds of food do you have?",
-                "what types of food do you serve?",
+                "What are the varieties of food offered at the cafeteria?",
+                "What kinds of food do you have?",
+                "What types of food do you serve?",
             ],
             answer: "For breakfast we have foods like waffles, cereal, oatmeal and coffee. For lunch we offer sandwiches, salads, sides and ice cream. For dinner we have entrees, appetizers, a salad bar and a wide variety of disserts.",
         },
         {
             phrasings: [
-                "what payment methods do you accept?",
-                "how can I pay for my meal?",
+                "What payment methods do you accept?",
+                "How can I pay for my meal?",
             ],
             answer: "We accept cash, credit or debit cards, and meal plans.",
         },
         {
             phrasings: [
-                "what is the library's phone number?",
-                "what is the phone number for the library?",
-                "how do i call the library?",
+                "What is the library's phone number?",
+                "What is the phone number for the library?",
+                "How do I call the library?",
             ],
             answer: "You can reach the library at 412-367-9300.",
         },
         {
             phrasings: [
-                "what is the library's email?",
-                "what is the library's email address?",
-                "what is the email address for the library?",
+                "What is the library's email?",
+                "What is the library's email address?",
+                "What is the email address for the library?",
             ],
             answer: "You can email the library at library@laroche.edu.",
         },
         {
             phrasings: [
-                "when is the library open?",
-                "what are the open and closing times of the library?",
-                "what are the hours for the library?",
+                "When is the library open?",
+                "What are the open and closing times of the library?",
+                "What are the hours for the library?",
             ],
             answer: "The library is open Monday through Friday from 9:00 to 6:00, and on Saturday from 9:00-4:00.",
         },
         {
             phrasings: [
-                "what can i do at the library?",
-                "what services does the library offer?",
-                "apart from borrowing materials, what other services are offered in the library?",
+                "What can I do at the library?",
+                "What services does the library offer?",
+                "Apart from borrowing materials, what other services are offered in the library?",
             ],
             answer: "The library provides a quiet place to read or study, a computer lab, a help desk, and a media room.",
         },
