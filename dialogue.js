@@ -83,7 +83,7 @@ function askQuestion(question) {
         },
         {
             phrasings: [
-                "What payment methods does the cafeteria accept?"
+                "What payment methods does the cafeteria accept?",
                 "What payment methods do you accept?",
                 "How can I pay for my meal?",
             ],
