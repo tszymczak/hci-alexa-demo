@@ -164,6 +164,7 @@ function askQuestion(question) {
             potentialQuestion = questions[i].phrasings[j].toLowerCase();
             if ( lowerQuestion == potentialQuestion ) {
                 alexaSay(questions[i].answer);
+                // Display the relevant image.
                 showImg(questions[i].image);
                 matched = 1;
             }
@@ -195,6 +196,7 @@ function scrollToBottom() {
     chatBox.scrollTop = chatBox.scrollHeight;
 }
 
+// Change the image that appears on the Show screen.
 function showImg(newimg) {
     var image = document.getElementById("show-screen");
 
