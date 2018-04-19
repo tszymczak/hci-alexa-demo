@@ -34,7 +34,7 @@ function askQuestion(question) {
             phrasings: [
                 "is the cafeteria open?",
                 "is the cafeteria open right now?",
-            ]
+            ],
         },
         {
             answer: "The cafeteria is open for breakfast from 7:30 to 9:00, lunch from 11:00 to 2:00, and dinner from 5:00 to 7:00.",
@@ -42,9 +42,9 @@ function askQuestion(question) {
                 "when is the cafeteria open?",
                 "what time is the cafeteria open?",
                 "what are the cafeteria's hours?",
-            ]
-        }
-    ]
+            ],
+        },
+    ];
 
     lowerQuestion = question.toLowerCase();
 
