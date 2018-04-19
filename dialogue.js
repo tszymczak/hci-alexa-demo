@@ -44,11 +44,27 @@ function askQuestion(question) {
             ],
         },
         {
+            answer: "Breakfast ends at 9:00, lunch ends at 2:00 and dinner ends at 7:00.",
+            phrasings: [
+                "when does the cafeteria close?",
+                "what does the cafeteria stop serving food?",
+                "when does serving stop?",
+            ],
+        },
+        {
             answer: "The cafeteria is open for breakfast from 7:30 to 9:00, lunch from 11:00 to 2:00, and dinner from 5:00 to 7:00.",
             phrasings: [
                 "when is the cafeteria open?",
                 "what time is the cafeteria open?",
                 "what are the cafeteria's hours?",
+            ],
+        },
+        {
+            answer: "For breakfast we have foods like waffles, cereal, oatmeal and coffee. For lunch we offer sandwiches, salads, sides and ice cream. For dinner we have entrees, appetizers, a salad bar and a wide variety of disserts.",
+            phrasings: [
+                "what are the varieties of food offered at the cafeteria?",
+                "what kinds of food do you have?",
+                "what types of food do you serve?",
             ],
         },
     ];
