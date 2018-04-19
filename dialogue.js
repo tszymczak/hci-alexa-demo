@@ -53,7 +53,7 @@ function askQuestion(question) {
         for ( var j = 0; j < questions[i].phrasings.length && matched == 0; j++ ) {
             potentialQuestion = questions[i].phrasings[j];
             if ( lowerQuestion == potentialQuestion ) {
-                alexaSpeak(questions[i].answer);
+                alexaSay(questions[i].answer);
                 matched = 1;
             }
         }
