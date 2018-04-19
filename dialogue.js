@@ -163,6 +163,7 @@ function askQuestion(question) {
         for ( var j = 0; j < questions[i].phrasings.length && matched == 0; j++ ) {
             potentialQuestion = questions[i].phrasings[j].toLowerCase();
             if ( lowerQuestion == potentialQuestion ) {
+                // Put the answer in the chat box.
                 alexaSay(questions[i].answer);
                 // Display the relevant image.
                 showImg(questions[i].image);
@@ -183,6 +184,8 @@ function sleep(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
+// Display test messages in the chat box. Only accessible via the javascript
+// console.
 function test() {
     userSay("Hello");
     alexaSay("Hello");
