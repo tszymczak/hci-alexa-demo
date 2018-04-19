@@ -164,9 +164,10 @@ function askQuestion(question) {
             phrasings: [
                 "Can I check out a book?",
                 "I want to borrow a book.",
-            ]
+            ],
             answer: "Okay. Reserve a copy by logging in and selecting a book, or ask the librarian.",
             image: "library-login",
+        },
     ];
 
     lowerQuestion = question.toLowerCase();
