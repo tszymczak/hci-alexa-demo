@@ -1,3 +1,14 @@
+// Set up the process of hitting Enter to talk to Alexa.
+function submitOnEnter() {
+    var inputBox = document.getElementById("dialog-box");
+    inputBox.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13 && inputBox.value != "") {
+            ask();
+        }
+    });
+}
+
 async function ask() {
     var message = document.getElementById("dialog-box").value;
     document.getElementById("dialog-box").value = "";
