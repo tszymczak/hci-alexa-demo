@@ -53,6 +53,7 @@ function askQuestion(question) {
             phrasings: [
                 "Is the cafeteria open?",
                 "Is the cafeteria open right now?",
+                "Is the cafeteria currently open?",
             ],
             answer: "The cafeteria is currently open for lunch.",
         },
@@ -74,14 +75,15 @@ function askQuestion(question) {
         },
         {
             phrasings: [
-                "What are the varieties of food offered at the cafeteria?",
-                "What kinds of food do you have?",
                 "What types of food do you serve?",
+                "What kinds of food do you have?",
+                "What are the varieties of food offered at the cafeteria?",
             ],
-            answer: "For breakfast we have foods like waffles, cereal, oatmeal and coffee. For lunch we offer sandwiches, salads, sides and ice cream. For dinner we have entrees, appetizers, a salad bar and a wide variety of disserts.",
+            answer: "For breakfast we have waffles, cereal, oatmeal and coffee. For lunch we offer sandwiches, salads, sides and ice cream. For dinner we serve entrees, appetizers, a salad bar and a wide variety of disserts.",
         },
         {
             phrasings: [
+                "What payment methods does the cafeteria accept?"
                 "What payment methods do you accept?",
                 "How can I pay for my meal?",
             ],
@@ -113,8 +115,8 @@ function askQuestion(question) {
         },
         {
             phrasings: [
-                "What can I do at the library?",
                 "What services does the library offer?",
+                "What can I do at the library?",
                 "Apart from borrowing materials, what other services are offered in the library?",
             ],
             answer: "The library provides a quiet place to read or study, a computer lab, a help desk, and a media room.",
