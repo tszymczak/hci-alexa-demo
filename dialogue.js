@@ -44,6 +44,7 @@ function alexaSay(message) {
 
 function askQuestion(question) {
     var questions = [
+        // Easter egg
         {
             phrasings: [
                 "Hello",
@@ -51,6 +52,7 @@ function askQuestion(question) {
             ],
             answer: "Hello.",
         },
+        // Cafeteria questions.
         {
             phrasings: [
                 "Is the cafeteria open?",
@@ -99,6 +101,7 @@ function askQuestion(question) {
             ],
             answer: "You can reach the library at 412-367-9300.",
         },
+        // Library questions
         {
             phrasings: [
                 "What is the library's email?",
