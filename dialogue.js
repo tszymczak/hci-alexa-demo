@@ -3,18 +3,20 @@ function submitOnEnter() {
     var inputBox = document.getElementById("dialog-box");
     inputBox.addEventListener("keyup", function(event) {
         event.preventDefault();
-        if (event.keyCode === 13 && inputBox.value != "") {
+        if (event.keyCode === 13) {
             ask();
         }
     });
 }
 
 async function ask() {
-    var message = document.getElementById("dialog-box").value;
-    document.getElementById("dialog-box").value = "";
-    userSay(message);
-
-    askQuestion(message);
+    var dialogBox = document.getElementById("dialog-box");
+    if (dialogBox.value != "") {
+        var message = dialogBox.value;
+        dialogBox.value = "";
+        userSay(message);
+        askQuestion(message);
+    }
 }
 
 function userSay(message) {
