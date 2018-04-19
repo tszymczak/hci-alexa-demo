@@ -57,9 +57,9 @@ input {
 }
 
 /* The box that displays the contents of the Show screen */
-#show-screen {
+#show-screen-div {
 	width: 768px;
-	height: 462px;
+	height: 635px;
 }
 
 .card {

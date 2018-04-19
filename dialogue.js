@@ -51,6 +51,7 @@ function askQuestion(question) {
                 "Hello.",
             ],
             answer: "Hello.",
+            image: "none",
         },
         // Cafeteria questions.
         {
@@ -60,6 +61,7 @@ function askQuestion(question) {
                 "Is the cafeteria currently open?",
             ],
             answer: "The cafeteria is currently open for lunch.",
+            image: "cafe-intro",
         },
         {
             phrasings: [
@@ -68,6 +70,7 @@ function askQuestion(question) {
                 "When does serving stop?",
             ],
             answer: "Breakfast ends at 9:00, lunch ends at 2:00 and dinner ends at 7:00.",
+            image: "cafe-intro",
         },
         {
             phrasings: [
@@ -76,6 +79,7 @@ function askQuestion(question) {
                 "What are the cafeteria's hours?",
             ],
             answer: "The cafeteria is open for breakfast from 7:30 to 9:00, lunch from 11:00 to 2:00, and dinner from 5:00 to 7:00.",
+            image: "cafe-intro",
         },
         {
             phrasings: [
@@ -84,6 +88,7 @@ function askQuestion(question) {
                 "What are the varieties of food offered at the cafeteria?",
             ],
             answer: "For breakfast we have waffles, cereal, oatmeal and coffee. For lunch we offer sandwiches, salads, sides and ice cream. For dinner we serve entrees, appetizers, a salad bar and a wide variety of disserts.",
+            image: "cafe-menu",
         },
         {
             phrasings: [
@@ -92,7 +97,9 @@ function askQuestion(question) {
                 "How can I pay for my meal?",
             ],
             answer: "We accept cash, credit or debit cards, and meal plans.",
+            image: "cafe-intro",
         },
+        // Library questions
         {
             phrasings: [
                 "What is the library's phone number?",
@@ -100,8 +107,8 @@ function askQuestion(question) {
                 "How do I call the library?",
             ],
             answer: "You can reach the library at 412-367-9300.",
+            image: "library-login",
         },
-        // Library questions
         {
             phrasings: [
                 "What is the library's email?",
@@ -109,6 +116,7 @@ function askQuestion(question) {
                 "What is the email address for the library?",
             ],
             answer: "You can email the library at library@laroche.edu.",
+            image: "library-login",
         },
         {
             phrasings: [
@@ -117,6 +125,7 @@ function askQuestion(question) {
                 "What are the hours for the library?",
             ],
             answer: "The library is open Monday through Friday from 9:00 to 6:00, and on Saturday from 9:00-4:00.",
+            image: "library-login",
         },
         {
             phrasings: [
@@ -125,6 +134,7 @@ function askQuestion(question) {
                 "Apart from borrowing materials, what other services are offered in the library?",
             ],
             answer: "The library provides a quiet place to read or study, a computer lab, a help desk, and a media room.",
+            image: "library-books",
         },
         {
             phrasings: [
@@ -133,6 +143,7 @@ function askQuestion(question) {
                 "What can I borrow from the library?",
             ],
             answer: "We don't just offer books! You can also borrow periodicals and DVDs.",
+            image: "library-books",
         },
         {
             phrasings: [
@@ -141,6 +152,7 @@ function askQuestion(question) {
                 "How long can you borrow things for?",
             ],
             answer: "Books are due after three weeks. Magazines and movies are due in one week.",
+            image: "library-books",
         }
     ];
 
@@ -152,6 +164,7 @@ function askQuestion(question) {
             potentialQuestion = questions[i].phrasings[j].toLowerCase();
             if ( lowerQuestion == potentialQuestion ) {
                 alexaSay(questions[i].answer);
+                showImg(questions[i].image);
                 matched = 1;
             }
         }
@@ -182,3 +195,20 @@ function scrollToBottom() {
     chatBox.scrollTop = chatBox.scrollHeight;
 }
 
+function showImg(newimg) {
+    var image = document.getElementById("show-screen");
+
+    if (newimg == "white") {
+        image.src = 'images/white.png';
+    } else if (newimg == "cafe-intro") {
+        image.src = 'images/cafe-intro.png';
+    } else if (newimg == "cafe-menu") {
+        image.src = "images/cafe-menu.png";
+    } else if (newimg == "library-books") {
+        image.src = "images/library-books.png";
+    } else if (newimg == "library-login") {
+        image.src = "images/library-login.png";
+    } else {
+        image.src = "images/white.png";
+    }
+}
