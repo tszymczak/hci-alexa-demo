@@ -65,18 +65,25 @@ function askQuestion(question) {
         },
         {
             phrasings: [
+                "When does the cafeteria open?",
+                "When does the cafeteria start serving food?",
+            ],
+            answer: "Breakfast starts at 7:30, lunch starts at 11:00 and dinner starts at 5:00.",
+            image: "cafe-intro",
+        },                
+        {
+            phrasings: [
                 "When does the cafeteria close?",
                 "What does the cafeteria stop serving food?",
-                "When does serving stop?",
             ],
             answer: "Breakfast ends at 9:00, lunch ends at 2:00 and dinner ends at 7:00.",
             image: "cafe-intro",
         },
         {
             phrasings: [
+                "What are the cafeteria's hours?",
                 "When is the cafeteria open?",
                 "What time is the cafeteria open?",
-                "What are the cafeteria's hours?",
             ],
             answer: "The cafeteria is open for breakfast from 7:30 to 9:00, lunch from 11:00 to 2:00, and dinner from 5:00 to 7:00.",
             image: "cafe-intro",
@@ -92,12 +99,11 @@ function askQuestion(question) {
         },
         {
             phrasings: [
-                "What payment methods does the cafeteria accept?",
-                "What payment methods do you accept?",
-                "How can I pay for my meal?",
+                "What is on the menu today?",
+                "What is being served today?",
             ],
-            answer: "We accept cash, credit or debit cards, and meal plans.",
-            image: "cafe-intro",
+            answer: "The current lunch menu is a hamburger or cheeseburger with a side of mixed vegetables or onion rings.",
+            image: "cafe-menu",
         },
         // Library questions
         {
@@ -107,7 +113,7 @@ function askQuestion(question) {
                 "How do I call the library?",
             ],
             answer: "You can reach the library at 412-367-9300.",
-            image: "library-login",
+            image: "library-books",
         },
         {
             phrasings: [
@@ -116,16 +122,16 @@ function askQuestion(question) {
                 "What is the email address for the library?",
             ],
             answer: "You can email the library at library@laroche.edu.",
-            image: "library-login",
+            image: "library-books",
         },
         {
             phrasings: [
                 "When is the library open?",
-                "What are the open and closing times of the library?",
                 "What are the hours for the library?",
+                "What are the open and closing times of the library?",
             ],
             answer: "The library is open Monday through Friday from 9:00 to 6:00, and on Saturday from 9:00-4:00.",
-            image: "library-login",
+            image: "library-books",
         },
         {
             phrasings: [
@@ -138,9 +144,9 @@ function askQuestion(question) {
         },
         {
             phrasings: [
+                "What can I borrow from the library?",
                 "What can I borrow from the library other than books?",
                 "Apart from books, what other items can I borrow from the library?",
-                "What can I borrow from the library?",
             ],
             answer: "We don't just offer books! You can also borrow periodicals and DVDs.",
             image: "library-books",
@@ -153,7 +159,14 @@ function askQuestion(question) {
             ],
             answer: "Books are due after three weeks. Magazines and movies are due in one week.",
             image: "library-books",
-        }
+        },
+        {
+            phrasings: [
+                "Can I check out a book?",
+                "I want to borrow a book.",
+            ]
+            answer: "Okay. Reserve a copy by logging in and selecting a book, or ask the librarian.",
+            image: "library-login",
     ];
 
     lowerQuestion = question.toLowerCase();
