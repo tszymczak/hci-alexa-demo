@@ -67,6 +67,61 @@ function askQuestion(question) {
             ],
             answer: "For breakfast we have foods like waffles, cereal, oatmeal and coffee. For lunch we offer sandwiches, salads, sides and ice cream. For dinner we have entrees, appetizers, a salad bar and a wide variety of disserts.",
         },
+        {
+            phrasings: [
+                "what payment methods do you accept?",
+                "how can I pay for my meal?",
+            ],
+            answer: "We accept cash, credit or debit cards, and meal plans.",
+        },
+        {
+            phrasings: [
+                "what is the library's phone number?",
+                "what is the phone number for the library?",
+                "how do i call the library?",
+            ],
+            answer: "You can reach the library at 412-367-9300.",
+        },
+        {
+            phrasings: [
+                "what is the library's email?",
+                "what is the library's email address?",
+                "what is the email address for the library?",
+            ],
+            answer: "You can email the library at library@laroche.edu.",
+        },
+        {
+            phrasings: [
+                "when is the library open?",
+                "what are the open and closing times of the library?",
+                "what are the hours for the library?",
+            ],
+            answer: "The library is open Monday through Friday from 9:00 to 6:00, and on Saturday from 9:00-4:00.",
+        },
+        {
+            phrasings: [
+                "what can i do at the library?",
+                "what services does the library offer?",
+                "apart from borrowing materials, what other services are offered in the library?",
+            ],
+            answer: "The library provides a quiet place to read or study, a computer lab, a help desk, and a media room.",
+        },
+        {
+            phrasings: [
+                "What can I borrow from the library other than books?",
+                "Apart from books, what other items can I borrow from the library?",
+                "What can I borrow from the library?",
+            ],
+            answer: "We don't just offer books! You can also borrow periodicals and DVDs.",
+        },
+        {
+            phrasings: [
+                "When are borrowed materials due?",
+                "When do you have to return books?",
+                "How long can you borrow things for?",
+            ],
+            answer: "Books are due after three weeks. Magazines and movies are due in one week.",
+        }
     ];
 
     lowerQuestion = question.toLowerCase();
@@ -74,7 +129,7 @@ function askQuestion(question) {
     var matched = 0;
     for ( var i = 0; i < questions.length && matched == 0; i++ ) {
         for ( var j = 0; j < questions[i].phrasings.length && matched == 0; j++ ) {
-            potentialQuestion = questions[i].phrasings[j];
+            potentialQuestion = questions[i].phrasings[j].toLowerCase();
             if ( lowerQuestion == potentialQuestion ) {
                 alexaSay(questions[i].answer);
                 matched = 1;
