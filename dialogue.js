@@ -30,6 +30,13 @@ function alexaSay(message) {
 function askQuestion(question) {
     var questions = [
         {
+            answer: "Hello.",
+            phrasings: [
+                "hello",
+                "hello.",
+            ],
+        },
+        {
             answer: "The cafeteria is currently open for lunch.",
             phrasings: [
                 "is the cafeteria open?",
