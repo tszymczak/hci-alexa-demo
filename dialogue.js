@@ -12,7 +12,7 @@ function submitOnEnter() {
 async function ask() {
     var message = document.getElementById("dialog-box").value;
     document.getElementById("dialog-box").value = "";
-    userSay(message)
+    userSay(message);
 
     askQuestion(message);
 }
@@ -25,6 +25,7 @@ function userSay(message) {
 
     // Put message box container in the page.
     document.getElementById("chat-box").appendChild(messageBox);
+    scrollToBottom();
 }
 
 function alexaSay(message) {
@@ -35,6 +36,7 @@ function alexaSay(message) {
 
     // Put message box container in the page.
     document.getElementById("chat-box").appendChild(messageBox);
+    scrollToBottom();
 }
 
 
@@ -166,3 +168,10 @@ function test() {
     userSay("What time is the cafeteria open?");
     alexaSay("The cafeteria is open for breakfast from 7:30 to 9:00, lunch from 11:00 to 2:00, and dinner from 5:00 to 7:00.");
 }
+
+// Make the chat box jump to the most recent message.
+function scrollToBottom() {
+    var chatBox = document.getElementById("chat-box");
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
+
